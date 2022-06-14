@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Website using HTML</title>
+    <style>
+        .cOne {
+            text-align: center;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+        }
+
+        .pOne {
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            line-height: 1.5;
+        }
+
+        table,
+        th,
+        td {
+            border: 2px solid black;
+            border-collapse: collapse;
+            padding: 8px;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+
+        caption {
+            font-family: Verdana, Geneva, Tahoma, sans-serif
+        }
+        table > caption{
+            padding: 15px;
+        }
+        .formc{
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+        ol{
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            line-height: 1.5;
+        }
+        li a{
+            color: black;
+        }
+        .footer{
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+        span{
+            font-weight: bold;
+        }
+        hr{
+            border: 1px solid red;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 class="cOne" id="one">Simple website demo using HTML</h1>
+    <p class="cOne"><img src="./images/logo.webp" alt="This is a logo" width="90px"></p>
+    <hr>
+    <iframe src="https://www.bbc.com/" frameborder="0" height="350" width="650"></iframe>
+    <iframe width="650" height="350" src="https://www.youtube.com/embed/RCMXO9sBIcU" title="YouTube video player"
+        frameborder="0"></iframe>
+    <hr>
+    <p class="pOne">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae facilis deserunt illum nam quis harum
+        dolorem aliquid voluptatibus? Ipsa harum similique sequi minima illum, obcaecati nostrum tempore explicabo
+        consequuntur deleniti?</p>
+    <p class="pOne">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorum aliquid repellendus vitae eum?
+        Minima explicabo magni eveniet recusandae, nihil sint deserunt quis laboriosam. Distinctio atque cumque
+        accusamus, animi nulla obcaecati. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima inventore
+        adipisci quod nam, sapiente sint. Fuga quasi inventore repellat aliquam illum possimus nostrum labore voluptates
+        dolorem, enim illo, nesciunt officiis?</p>
+    <p class="pOne">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti repudiandae quae sunt eveniet
+        debitis similique adipisci rem perspiciatis, consequatur sapiente modi expedita repellat officia itaque magnam
+        nostrum possimus dolore nam!</p>
+    <p class="pOne">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quas facere tempora voluptatem blanditiis
+        officiis sit deserunt voluptatibus accusamus! Officiis sunt animi odit tempore debitis a eaque ipsa cupiditate
+        dolorem vitae. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque, exercitationem error.
+        Dignissimos nesciunt eos sint sunt, atque cumque asperiores sapiente nobis dolor reiciendis veritatis illo
+        suscipit, natus cupiditate fuga nihil!</p>
+    <hr>
+    <table>
+        <caption>Students Info</caption>
+        <tr>
+            <th>Name</th>
+            <th>ID</th>
+            <th>Age</th>
+        </tr>
+        <tr>
+            <td>Rahimm</td>
+            <td>10</td>
+            <td>20</td>
+        </tr>
+        <tr>
+            <td>Karim</td>
+            <td>11</td>
+            <td>21</td>
+        </tr>
+        <tr>
+            <td>Abdul</td>
+            <td>12</td>
+            <td>22</td>
+        </tr>
+    </table>
+    <hr>
+    <form action="" class="formc">
+        <label for="name">User Name</label>
+        <input type="text" name="" id="name" value="" placeholder="Enter your name"><br><br>
+        <label for="email">Enter Email</label>
+        <input type="email" name="" id="email" value="" placeholder="Enter your email"><br><br>
+        <label for="pass">Enter Password</label>
+        <input type="password" name="" id="pass" value="" placeholder="Enter password" pattern="[a-zA-z0-9]+"><br><br>
+        <label for="gender">Gender</label>
+        <input type="radio" name="gender" id="gender" value="gender" checked>
+        <label for="gender">Male</label>
+        <input type="radio" name="gender" id="gender" value="gender">
+        <label for="gender">Female</label><br><br>
+        <label for="rel">Religion</label>
+        <input type="checkbox" name="rela" id="rel" value="rel" checked>
+        <label for="rel">Islam</label>
+        <input type="checkbox" name="rela" id="rel" value="rel">
+        <label for="rel">Hindu</label><br><br>
+        <label for="">Department</label>
+        <select name="" id="">
+            <option value="cse">CSE</option>
+            <option value="eee" selected>EEE</option>
+            <option value="nf">NFE</option>
+            <option value="se">SE</option>
+            <option value="ed">ED</option>
+        </select><br><br>
+        <textarea name="" id="" cols="30" rows="10" placeholder="Write your feedback">
+        </textarea><br><br>
+        <input type="submit" value="Submit">
+        <input type="submit" value="Log Out">
+        <hr>
+    </form>
+    <video width="320" height="240" controls autoplay muted>
+        <source src="./images/myvideo.mp4" type="video/mp4">
+    </video><br>
+    <audio controls>
+        <source src="./images/myaudio.mp3" type="audio/mp3">
+    </audio>
+    <ol>
+        <li><a href="">Facebook Profile</a></li>
+        <li><a href="">Website Link</a></li>
+        <li><a href="#one">Go to Top</a></li>
+    </ol><br><br>
+    <hr>
+    <p class="footer">&#169;Created by <span>Golam Kibria</span></p>
+    <hr>
+</body>
+
+</html>
