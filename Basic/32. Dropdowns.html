@@ -41,3 +41,74 @@
     </div>
 </body>
 </html>
+
+***
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dropdown menu</title>
+    <style>
+        .btn {
+            background-color: #4CAF50;
+            padding: 16px;
+            font-family: verdana;
+            font-size: 16px;
+            border: none;
+            color: white;
+            width: 150px;
+        }
+
+        .btn:hover {
+            background-color: tomato;
+            color: white;
+        }
+        .menu{
+            /* position: relative; */
+            display: inline-block;
+        }
+        .menu-bar{ 
+            display: none;
+            /* position: absolute; */
+            background-color: #f9f9f9;
+            width: 150px;
+        }
+        a{
+            text-decoration: none;
+            font-family: verdana;
+            font-size: 16px;
+            color: black;
+            padding: 10px 16px;
+            display: block;
+            border-bottom: 2px solid red;
+            text-align: center;
+        }
+        a:last-child{
+            border: none;
+        }
+        a:hover{
+            background-color: linen;
+        }
+        .menu:hover .menu-bar{
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="menu">
+        <button class="btn">Dropdown</button><br>
+        <div class="menu-bar">
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Contact</a>
+            <a href="#">Services</a>
+        </div>
+    </div>
+</body>
+
+</html>
