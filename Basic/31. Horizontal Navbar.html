@@ -1,12 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        ul{
+        ul {
             list-style-type: none;
             margin: 0;
             padding: 0;
@@ -19,29 +20,48 @@
             /* bottom: 0; if we want to menu bar in bottom*/
             width: 100%;
         }
-        a{
+
+        a {
             color: white;
             text-decoration: none;
             display: block;
             padding: 14px 28px;
             text-align: center;
         }
-        li{
+
+        li {
             float: left;
             /* border-right: 1px solid white; */
         }
-        a:hover{
+
+        a:hover {
             background-color: linen;
             color: black;
         }
-        a.active{
+
+        a.active {
             background-color: #04AA6D;
         }
-        a:hover:not(.active){
+
+        a:hover:not(.active) {
             background-color: #111;
+        }
+
+        @media screen and (max-width:600px) {
+
+            /* মানে 600px পর্যন্ত বা এর কম হলে নিচের শর্তগুলো এপ্লাই হবে। 
+           আর যদি 601px+ হয় তাহলে উপরের গুলো এপ্লাই হবে।  */
+            li {
+                float: none;
+            }
+
+            /* a{
+                text-align: left;
+            } */
         }
     </style>
 </head>
+
 <body>
     <ul>
         <li><a href="#" class="active">Home</a></li>
@@ -51,4 +71,5 @@
         <li><a href="#">Contact</a></li>
     </ul>
 </body>
+
 </html>
