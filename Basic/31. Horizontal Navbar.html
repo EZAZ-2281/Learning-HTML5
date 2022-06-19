@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        ul{
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: auto;
+            background-color: #333;
+            font-family: verdana;
+            position: fixed;
+            /* position:sticky; */
+            top: 0;
+            /* bottom: 0; if we want to menu bar in bottom*/
+            width: 100%;
+        }
+        a{
+            color: white;
+            text-decoration: none;
+            display: block;
+            padding: 14px 28px;
+            text-align: center;
+        }
+        li{
+            float: left;
+            /* border-right: 1px solid white; */
+        }
+        a:hover{
+            background-color: linen;
+            color: black;
+        }
+        a.active{
+            background-color: #04AA6D;
+        }
+        a:hover:not(.active){
+            background-color: #111;
+        }
+    </style>
+</head>
+<body>
+    <ul>
+        <li><a href="#" class="active">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Service</a></li>
+        <li><a href="#">Info</a></li>
+        <li><a href="#">Contact</a></li>
+    </ul>
+</body>
+</html>
