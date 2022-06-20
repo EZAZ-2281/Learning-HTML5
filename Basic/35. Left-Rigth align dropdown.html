@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Left-Right Align Dropdown</title>
+    <style>
+        body{
+            font-family: verdana;
+            font-size: 18px;
+        }
+        .left-div{
+            /* background-color: linen; */
+            display: inline-block;
+            position: relative;
+        }
+        .left{
+            background-color: tomato;
+            color: white;
+            padding: 8px 30px;
+            font-size: 18px;
+            border: none;
+            cursor: pointer;
+        }
+        .menu{
+            background-color: aliceblue;
+            position: absolute; 
+            width: 120px;
+            display: none;
+            border:2px solid red; 
+        }
+        .menu a{
+            color: black;
+            text-decoration: none;
+            display: block;
+            padding: 8px 12px;
+        }
+        .menu a:hover{
+            background-color: aqua;
+        }
+        .left-div:hover .menu{
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <div class="left-div" style="float:left;">
+        <button class="left">Left</button>
+        <div class="menu" style="left:0;">
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Contact</a>
+        </div>
+    </div>
+    <div class="left-div" style="float:right;">
+        <button class="left">Left</button>
+        <div class="menu" style="right:0;">
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Contact</a>
+        </div>
+    </div>
+</body>
+</html>
