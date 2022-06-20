@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dropdown Image</title>
+    <style>
+        body{
+            font-family: verdana;
+            font-size: 18px;
+        }
+        .image{
+            width: 150px;
+            height: 100px;
+        }
+        .drop-down{
+            position: relative;
+            display: inline-block;
+        }
+        .dropcontent{
+            position: absolute;
+            display: none;
+
+        }
+        .drop-down:hover .dropcontent{
+            display: block;
+        }
+        /* p{
+            margin-top: -3px;
+        } */
+    </style>
+</head>
+<body>
+    <p>Move the mouse over the image below</p>
+    <div class="drop-down">
+        <img src="https://www.w3schools.com/css/img_5terre.jpg" alt="" class="image">
+        <div class="dropcontent">
+            <img src="https://www.w3schools.com/css/img_5terre.jpg" alt="">
+            <p>Beautyful Image</p>
+        </div>
+    </div>
+</body>
+</html>
