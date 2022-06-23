@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Form</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            font-family: verdana;
+            font-size: 18px;
+        }
+
+        .container {
+            background-color: #f2f2f2;
+            border-radius: 4px;
+            padding: 20px;
+            height: 100%;
+            
+        }
+
+        .text {
+            float: left;
+            width: 25%;
+            margin-top: 6px;
+        }
+
+        label {
+            display: inline-block;
+            padding: 12px 12px 12px 0px;
+        }
+
+        .data {
+            float: left;
+            width: 75%;
+            margin-top: 6px;
+        }
+
+        input[type=text],
+        select,
+        textarea {
+            padding: 12px;
+            width: 100%;
+            border: 2px solid #ccc;
+            border-radius: 4px;
+            resize: vertical;
+        }
+
+        select {
+            cursor: pointer;
+        }
+
+        textarea {
+            height: 200px;
+            resize: none;
+        }
+
+        input[type=submit] {
+            background-color: #04AA6D;
+            color: white;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 4px;
+            float: right;
+            /* margin-top: 30px; */
+            cursor: pointer;
+        }
+
+        input[type=submit]:hover {
+            background-color: #45a049;
+        }
+
+        .row:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        @media screen and (max-width: 600px) {
+
+            .text,
+            .data,
+            input[type=submit] {
+                width: 100%;
+                margin-top: 0;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <form action="">
+            <div class="row">
+                <div class="text">
+                    <label for="fname">First Name</label>
+                </div>
+                <div class="data">
+                    <input type="text" id="fname" name="fname" placeholder="First Name">
+                </div>
+            </div>
+            <div class="row">
+                <div class="text">
+                    <label for="lname">Last Name</label>
+                </div>
+                <div class="data">
+                    <input type="text" id="lname" name="lname" placeholder="Last Name">
+                </div>
+            </div>
+            <div class="row">
+                <div class="text">
+                    <label for="add">Permanent Address</label>
+                </div>
+                <div class="data">
+                    <input type="text" id="add" name="add" placeholder="Enter address">
+                </div>
+            </div>
+            <div class="row">
+                <div class="text">
+                    <label for="country">Select Country</label>
+                </div>
+                <div class="data">
+                    <select name="country" id="country">
+                        <option value="one">Bangladesh</option>
+                        <option value="one">Pakistan</option>
+                        <option value="one">Nepal</option>
+                        <option value="one">Japan</option>
+                    </select>
+                </div>
+            </div>
+            <div class="row">
+                <div class="text">
+                    <label for="ta">Write something</label>
+                </div>
+                <div class="data">
+                    <textarea name="ta" id="ta" placeholder="Write something"></textarea>
+                </div>
+            </div>
+            <br>
+            <div class="row">
+                <div class="submit">
+                    <input type="submit" value="Submit">
+                </div>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
