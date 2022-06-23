@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Layout</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        body{
+            margin: 0;
+            background-color: #f1f1f1;
+        }
+        .header{
+            background-color: aquamarine;
+            font-family: verdana;
+            padding: 30px;
+            text-align: center;
+        }
+        .nav-link{
+            background-color: black;
+            font-family: verdana;
+            overflow: hidden;
+        }
+        .nav-link a{
+            color: white;
+            padding: 20px;
+            display: block;
+            float: left; 
+            text-decoration: none;
+        }
+        .nav-link a:hover{
+            background-color: aliceblue;
+            color: black;
+        }
+        .left-col{
+            width: 75%;
+            float: left;
+            font-family: verdana;
+        }
+        .card{
+            /* background-color: linen; */
+            padding: 20px;
+            margin-top: 10px;
+        }
+        .image{
+            background-color: #dee3de;
+            padding: 15px;
+            height: 200px;
+            border-radius: 5px;
+        }
+        .right-col{
+            float: left;
+            width: 25%;
+            padding-left: 20px;
+            /* background-color: aqua; */
+            font-family: verdana;
+        }
+        .row:after{
+            content: "";
+            display: table;
+            clear: both;
+        }
+        .footer{
+            background-color: aquamarine;
+            font-family: verdana;
+            padding: 30px;
+            text-align: center;
+        }
+        @media screen and (max-width:800px){
+            .left-col, .right-col{
+                width: 100%;
+                /* text-align: justify; */
+                padding: 0; /* এটা right-col এর ক্ষেত্রে কাজ করবে */
+            }
+        }
+        @media screen and (max-width:400px){
+            .nav-link a{
+                float: none;
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>Header</h1>
+        <p>This is Header. And it's responsive.</p>
+    </div>
+    <div class="nav-link">
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Service</a>
+        <a href="#">Contact</a>
+        <!-- <a href="#" style="float:right;">Contact</a> -->
+    </div>
+    <div class="row">
+        <div class="left-col">
+            <div class="card">
+                <h2>Description</h2>
+                <p>June 24, 2022</p>
+                <div class="image">Image</div>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi a alias quae ad vero cupiditate nulla ducimus, officia dicta quibusdam maiores aliquam! Harum, rerum! Nostrum quae vel maiores voluptates? Repudiandae.</p>
+            </div>
+            <div class="card">
+                <h2>Description</h2>
+                <p>June 24, 2022</p>
+                <div class="image">Image</div>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi a alias quae ad vero cupiditate nulla ducimus, officia dicta quibusdam maiores aliquam! Harum, rerum! Nostrum quae vel maiores voluptates? Repudiandae.</p>
+            </div>
+        </div>
+        <div class="right-col">
+            <div class="card">
+                <h2>About Me</h2>
+                <div class="image">Image</div>
+                <p>Some text about me</p>
+            </div>
+            <div class="card">
+                <h2>Popular Post</h2>
+                <div class="image" style="height:80px; border-bottom: 1px solid black;">Image</div>
+                <div class="image" style="height:80px;border-bottom: 1px solid black;">Image</div>
+                <div class="image" style="height:80px;">Image</div>
+                <p>Some text about popular post</p>
+            </div>
+            <div class="card">
+                <h2>Follow Me</h2>
+                <p>Some text about info</p>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <h1>Footer</h1>
+        <p>This is Footer. And it's responsive.</p>
+    </div>
+</body>
+</html>
