@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        body{
+            margin: 0;
+        }
+        .header{
+            background-color: aliceblue;
+            padding: 20px;
+            font-family: verdana;
+        }
+        .nav-link{
+            overflow: hidden;
+            background-color: black;
+            font-family: verdana;
+        }
+        .nav-link a{
+            color: white;
+            text-decoration: none;
+            display: block;
+            float: left;
+            padding: 15px 12px;
+        }
+        .nav-link a:hover{
+            background-color: linen;
+            color: black;
+            /* transition: 0.3s; */
+        }
+        .row{
+            font-family: verdana;
+        }
+        .side{
+            width: 25%;
+            float: left;
+            /* background-color: linen; */
+            padding: 15px 12px;
+            text-align: justify;
+        }
+        .middle{
+            width: 50%;
+            float: left;
+            /* background-color: linen; */
+            padding: 15px 12px;
+            text-align: justify;
+        }
+        .row:after{
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        .footer{
+            background-color: aliceblue;
+            padding: 20px;
+            font-family: verdana;
+        }
+        .hr{
+            border:2px solid green;
+        }
+        @media screen and (max-width:600px){
+            .middle, .side{
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>Header</h1> 
+        <p>Change the size to show the responsive effent.</p>
+    </div>
+    <div class="nav-link">
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Service</a>
+        <a href="#">Contact</a>
+    </div>
+    <div class="row">
+        <div class="side">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum veritatis, omnis, minima cum neque nesciunt dicta illum voluptates fuga alias sint vitae fugit vero quo quas qui distinctio inventore doloribus!</p>
+        </div>
+        <div class="middle">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic excepturi praesentium eaque, cum vel expedita obcaecati facere totam nulla. Adipisci nemo nostrum eum repudiandae maxime. Recusandae minus accusantium optio magnam!</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sit amet pretium urna. Vivamus venenatis velit nec neque ultricies, eget elementum magna tristique. Quisque vehicula, risus eget aliquam placerat, purus leo tincidunt eros, eget luctus quam orci in velit. Praesent scelerisque tortor sed accumsan convallis.
+
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sit amet pretium urna. Vivamus venenatis velit nec neque ultricies, eget elementum magna tristique. Quisque vehicula, risus eget aliquam placerat, purus leo tincidunt eros, eget luctus quam orci in velit. Praesent scelerisque tortor sed accumsan convallis.</p>
+        </div>
+        <div class="side">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo soluta explicabo quisquam nisi. Molestiae enim consequatur commodi repellat ab veritatis impedit assumenda aspernatur nemo, consectetur possimus accusamus eligendi, dolore incidunt!</p>
+        </div>
+    </div>
+    <div class="footer">
+        <h1>Footer</h1> 
+        <p>Change the size to show the responsive effent.</p>
+    </div>
+    <hr class="hr">
+    <h5 style="font-family:verdana;">Creater by Golam kibria</h5>
+</body>
+</html>
