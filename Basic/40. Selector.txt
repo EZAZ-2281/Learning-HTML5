@@ -1,0 +1,6 @@
+The class selector is given higher priority.
+Inline style is given the highest priority
+Inline styles - Example: <h1 style="color: pink;">
+IDs - Example: #navbar
+Classes, pseudo-classes, attribute selectors - Example: .test, :hover, [href]
+Elements and pseudo-elements - Example: h1, :before
