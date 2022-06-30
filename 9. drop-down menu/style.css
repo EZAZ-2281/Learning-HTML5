@@ -4,10 +4,11 @@
     padding: 0px;
 }
 body{
-    background-image: url();
+    background-image: url(./leaf.jpg);
     background-size: cover;
     background-position: center;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-repeat: repeat-y;
 }
 .menu-bar{
     background-color: rgb(0, 100, 0);
@@ -54,8 +55,26 @@ body{
     padding: 10px;
     border-bottom: 1px dotted white;
     text-align: left;
-    /* background-color: transparent; */
+    background-color: transparent; /* সাব মেনুতে আর background color অ্যাড হবে না */
 }
 .menu-bar ul li:hover .sub-menu-1 ul li:last-child{
     border-bottom: none;
+}
+.menu-bar ul li:hover .sub-menu-1 ul li a:hover{
+    color: #b2ff00;
+}
+.fa-angle-right{
+    float: right;
+    color: white;
+}
+.sub-menu-2{
+    display: none;
+}
+.hover-me:hover .sub-menu-2{
+    display: block;
+    position: absolute;
+    margin-top: -40px;
+    margin-left: 140px;
+    background-color: rgba(0, 100, 0);
+    padding: 5px;
 }
